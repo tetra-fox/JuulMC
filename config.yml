@@ -1,4 +1,7 @@
 # JuulMC by @tetrafox_
 
-# how many particles a hit should spawn
+# how many particles a hit should spawn (default: 20)
 particleCount: 20
+
+# should taking a hit increase the food level? (default: true)
+appetiteSuppress: true

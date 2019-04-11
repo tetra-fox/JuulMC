@@ -16,7 +16,7 @@ public class JuulItem extends ItemStack {
 		ItemMeta meta = juul.getItemMeta();
 
 		meta.setDisplayName(ChatColor.RESET + "JUUL");
-		meta.setLore(Arrays.asList(ChatColor.RESET + "" + ChatColor.DARK_PURPLE + "that's 50 nic"));
+		meta.setLore(Arrays.asList("that's 50 nic"));
 
 		juul.setItemMeta(meta);
 	}

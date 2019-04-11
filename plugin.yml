@@ -5,7 +5,7 @@ api-version: 1.13
 commands:
   juul:
     description: gives the player a juul
-    usage: /juul [amount] [player]
+    usage: /juul [amount]
 permissions:
   juulmc.*:
     description: grants a player all juulmc permissions
