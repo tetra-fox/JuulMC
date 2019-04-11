@@ -8,3 +8,15 @@ that's 50 nic
 
 ## demo
 ![demo](https://i.imgur.com/8DrduZZ.gif)
+
+## commands
+* `/juul` - gives the player a juul
+  * usage: `/juul [amount]`
+  
+## permission nodes
+* `juulmc.*` - grants a player all juulmc permissions
+  * default: `false`
+* `juulmc.command.use` - allows a player to use `/juul`
+  * default: `op`
+* `juulmc.craft` - allows a player to craft a juul
+  * default: `true`
