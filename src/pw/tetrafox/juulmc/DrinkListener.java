@@ -1,7 +1,5 @@
 package pw.tetrafox.juulmc;
 
-import java.util.List;
-
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
@@ -17,16 +15,9 @@ public class DrinkListener implements Listener {
 	@EventHandler
 	public void onPlayerConsume(PlayerItemConsumeEvent e) {
 		ItemStack item = e.getItem();
-		String itemDisplayName = item.getItemMeta().getDisplayName();
-		List<String> itemLore = item.getItemMeta().getLore();
 
-		// comparison juul
-		ItemStack comp = new JuulItem().juul;
-		String compDisplayName = comp.getItemMeta().getDisplayName();
-		List<String> compLore = comp.getItemMeta().getLore();
-
-		if (item.getType().equals(comp.getType()) && itemDisplayName.equalsIgnoreCase(compDisplayName)
-				&& itemLore.get(0).equalsIgnoreCase(compLore.get(0))) {
+		// check if item is a juul
+		if (item.getItemMeta().equals(new JuulItem().juul.getItemMeta())) {
 			e.setCancelled(true);
 
 			Player p = e.getPlayer();
